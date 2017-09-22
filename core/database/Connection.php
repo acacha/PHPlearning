@@ -11,7 +11,8 @@ class Connection
             $driver = $config['database']['driver'];
             $host = $config['database']['host'];
             $dbname = $config['database']['name'];
-            $dsn = $driver . ',host=' . $host  . ';dbname=' . $dbname;
+//            mysql:host=127.0.0.1;dbname=prova'
+            $dsn = $driver . ':host=' . $host  . ';dbname=' . $dbname;
             $username = $config['database']['username'];
             $password = $config['database']['password'];
             $options = $config['database']['options'];

@@ -1,7 +1,12 @@
 <?php require('app/views/partials/menu.php') ?>
 
+<h1>Tasques</h1>
 
-<h1>Contact Us</h1>
-<p>Hola aquesta és la nostra adreça de contacte..</p>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 
 <?php require('app/views/partials/footer.php') ?>
+

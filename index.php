@@ -1,10 +1,8 @@
 <?php
 
-//Model
-//$codi = "asddasdasd";
+require 'core/bootstrap.php';
 
-//require 'index.view.php';
-
-// FC -> Front Controller
+//Chaining methods
+$uri = "tasks";
 Router::load('app/routes.php')->direct($uri);
 

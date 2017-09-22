@@ -7,6 +7,6 @@ return [
         'username' => 'debian-sys-maint',
         'password' => 'NEhcL1w1W6ndDc6P',
         'driver' => 'mysql',
-        'options' => ''
+        'options' => []
     ]
 ];
