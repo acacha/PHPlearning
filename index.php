@@ -7,3 +7,4 @@
 
 // FC -> Front Controller
 Router::load('app/routes.php')->direct($uri);
+
