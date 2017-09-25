@@ -2,14 +2,12 @@
 
 require 'core/bootstrap.php';
 
-//Chaining methods
-$uri = "tasks";
+//$request = new Request();
+//$uri = $request->uri();
 
-dd(trim('/about/','/'));
-
-dd($_SERVER);
-
-
-
+$uri = Request::uri();
+//dd($uri);
 Router::load('app/routes.php')->direct($uri);
+
+
 
