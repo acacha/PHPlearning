@@ -2,9 +2,8 @@
 
 <h1>Digue'm quina tasca vols afegir</h1>
 
-<form action="/task_add">
-    Name: <input type="text" name="patata">
-    asdasd: <input type="text" name="asdasd">
+<form action="/task_add" method="POST">
+    Name: <input type="text" name="name">
     <button type="submit">Add</button>
 </form>
 
