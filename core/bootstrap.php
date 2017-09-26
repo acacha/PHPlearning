@@ -11,3 +11,4 @@ require 'core/Router.php';
 
 $pdo = Connection::connect($config);
 $query = new QueryBuilder($pdo);
+
