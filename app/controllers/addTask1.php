@@ -2,6 +2,8 @@
 
 $database = App::resolve('database');
 
-// $database->insert();
+$database->insert('tasks', [
+    "name" => $_POST['name']
+]);
 
-echo "RECIBIDO!";
+require 'app/views/successfull.view.php';
