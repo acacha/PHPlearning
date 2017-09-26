@@ -1,5 +1,7 @@
 <?php
 
+namespace Acachaframework;
+
 class Router
 {
 
@@ -40,7 +42,7 @@ class Router
 
         $action = explode('@',$this->routes[$requestType][$uri]);
 
-        $controller = $action[0];
+        $controller = 'App\Controllers\\' . $action[0];
         $method = $action[1];
 
         // Check if class_exists() http://php.net/manual/en/function.class-exists.php

@@ -1,5 +1,8 @@
 <?php
 
+namespace Acachaframework;
+
+
 class App
 {
     protected static $registry = [];

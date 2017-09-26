@@ -1,5 +1,9 @@
 <?php
 
+// Namespaces -> Like Java packages
+
+use Acachaframework\Router;
+
 $router = new Router();
 
 $router->get('','PagesController@home');

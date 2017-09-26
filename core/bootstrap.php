@@ -1,5 +1,9 @@
 <?php
 
+use Acachaframework\App;
+use Acachaframework\Database\Connection;
+use Acachaframework\Database\QueryBuilder;
+
 $config = require 'config/config.php';
 
 require 'core/lib/functions.php';

@@ -1,5 +1,7 @@
 <?php
 
+namespace Acachaframework;
+
 class Request
 {
     public static function uri()

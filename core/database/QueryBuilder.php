@@ -1,5 +1,8 @@
 <?php
 
+namespace Acachaframework\Database;
+use PDO;
+
 /**
  * Class QueryBuilder.
  */

@@ -1,5 +1,10 @@
 <?php
 
+namespace Acachaframework\Database;
+
+use PDO;
+use PDOException;
+
 /**
  * Class Connection.
  */
