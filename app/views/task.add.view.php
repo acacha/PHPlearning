@@ -1,6 +1,6 @@
 <?php require('app/views/partials/menu.php') ?>
 
-<h1>Digue'm quina tasca vols afegir</h1>
+<h1>Digue'm quina tasca vols afegir:</h1>
 
 <form action="/task" method="POST">
     Name: <input type="text" name="name">

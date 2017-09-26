@@ -1,0 +1,15 @@
+{
+    "name": "sergi/ph-plearning",
+    "authors": [
+        {
+            "name": "Sergi Tur Badenas",
+            "email": "sergiturbadenas@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap" : [
+            "./"
+        ]
+    }
+}
