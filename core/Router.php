@@ -13,14 +13,14 @@ class Router
         $this->routes = $routes;
     }
 
-    public function get($uri,$file)
+    public function get($uri,$action)
     {
-        $this->routes['GET'][$uri] = $file;
+        $this->routes['GET'][$uri] = $action;
     }
 
-    public function post($uri,$file)
+    public function post($uri,$action)
     {
-        $this->routes['POST'][$uri] = $file;
+        $this->routes['POST'][$uri] = $action;
 
     }
 
@@ -38,7 +38,16 @@ class Router
 
         if (! array_key_exists($uri,$this->routes[$requestType])) throw new Exception('No route found');
 
-        require $this->routes[$requestType][$uri];
+        $action = explode('@',$this->routes[$requestType][$uri]);
+
+        $controller = $action[0];
+        $method = $action[1];
+
+        // Check if class_exists() http://php.net/manual/en/function.class-exists.php
+        $controller = new $controller();
+        //Same here: method_exists http://php.net/manual/es/function.method-exists.php
+        $controller->$method();
+
 
     }
 }
