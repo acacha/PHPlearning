@@ -1,15 +1,7 @@
 <?php
 
-//BOOTSTRAP
-$pdo = Connection::connect($config);
+$database = App::resolve('database');
 
-App::bind('database', new QueryBuilder($pdo));
-
-
-//FORA BOOSTRAP
-
-$query = App::resolve('database');
-
-$tasks = $query->fetchAll('tasks');
+$tasks = $database->fetchAll('tasks');
 
 require 'app/views/tasks.view.php';

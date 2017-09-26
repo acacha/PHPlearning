@@ -2,8 +2,7 @@
 
 class App
 {
-
-    protected $registry = [];
+    protected static $registry = [];
 
     public static function bind($name,$value)
     {
@@ -17,13 +16,3 @@ class App
         return static::$registry[$name];
     }
 }
-
-//$app = new App()
-//$app->
-
-//App::set
-
-//App::bind('database',)
-//
-////App::get
-//App:resolve('database')
